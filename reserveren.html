@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <button id="return"><a href="./index.html"><img src="./afbeeldingen/Next.png" alt="" id="returnArrow"> Italiaans - Pasta Joe</a></button>
+        </div>
+
+        <div class="item2">
+            <form action="">
+                <fieldset>
+                    <legend>Reserveren</legend>
+                    1. Foodtruck
+                    <h3><img src="./afbeeldingen/PJ.jpg" alt="PJ" class="roundImg">Pasta Joe</h3>
+                    2. Datum
+                    <br>
+                    <input type="datetime-local" name="calendar" class="calendar"> --- <input type="datetime-local" name="calendar" class="calendar">
+                    <br>
+                    3. Locatie gegevens
+                    <input type="search" name="location" id="location" placeholder="Straat">
+                    <input type="search" name="location" class="location" placeholder="Postcode">
+                    <input type="search" name="location" class="location" placeholder="Plaats">
+                    <br>
+                    4. Bericht aan Pasta Joe
+                    <input type="text" id="message" placeholder="Bijvoorbeeld extra informatie over waar en waarom jij zijn Foodtruck reserveert. Met dit bericht start je de conversatie.">
+                    <br>
+                    5. Mijn gegevens
+                    <br>
+                    <p class="first">Naam:</p> <p class="secondMy">Nathan Neelis</p>
+                    <br>
+                    <p class="first">Leeftijd:</p> <p id="secondMy2">28 jaar</p>
+                    <br>
+                    <p class="first">Woonplaats:</p> <p id="secondMy3">Alkmaar</p>
+                    <br>
+                    <p class="first">Bedrijf:</p> <p id="secondMy4">Nathan Pancakes</p>
+                    <br>
+                    <br>
+                    6. Contact gegevens
+                    <br>
+                    <p class="first">Telefoon:</p> <p class="secondContact">06-51230438</p>
+                    <br>
+                    <p class="first">E-mail:</p> <p id="secondContact2">info@nathanpancakes.nl</p>
+                    <br>
+                    <p class="first">Website:</p> <p id="secondContact3">www.nathanpancakes.nl</p>
+                    <br>
+                    <button id="confirmation" onclick="alert('De aanvraag is succesvol ingediend')">Aanvraag versturen</button>
+                </fieldset>
+            </form>
+        </div>
+    <script src="js.js"></script>
+</body>
+</html>

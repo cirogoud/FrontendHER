@@ -1,0 +1,381 @@
+@font-face {
+    font-family: "Lato";
+    src: url(https://fonts.googleapis.com/css?family=Lato&display=swap);
+}
+
+@font-face {
+    font-family: "Noteworthy";
+    src: url(/Typography/Noteworthy-Lt.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* TEXT */
+
+h2 {
+    margin: 10px;
+    font-family: Noteworthy;
+    text-align: left;
+    color: grey;
+  }
+
+/* NAV */
+
+a {
+    text-decoration: none;
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: lightgrey; 
+    overflow: hidden;
+    position: fixed;
+    bottom: 0px; 
+    border-top: 1px solid grey; 
+    z-index: 1;
+  }
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 20px 0;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+input {
+    width: 93%;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    box-shadow: inset 0 0 4px #000000;
+}
+input::placeholder {
+    color: grey;
+}
+
+.button-group {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: auto auto auto auto; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+button {
+    margin: 2px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    border: 1px solid black;
+ }
+ button:focus {
+     outline: none;
+ }
+
+/* GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0px;
+    background-color: lightgrey;
+    padding: 5px;
+  }
+  .grid-container > div {
+    background-color: lightgrey;
+    text-align: center;
+    padding: 0;
+    font-size: 1.3em;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .item2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .item3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .item4 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+/* SLIDER */
+
+.slider {
+    margin-left: 10px;
+    margin-bottom: -20px;
+    width: 480px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slider::-webkit-scrollbar {
+      display: none;
+  }
+  .slide {
+    background-color: green;
+    width: 300px;
+    flex-shrink: 0;
+    height: 80%;
+    margin-right: 10px;
+  }
+/* SLIDES */
+
+#slide-1 {
+    background-image: url(./afbeeldingen/FT1.jpg);
+    background-size: cover;
+}
+    #slide-2 {
+    background-image: url(./afbeeldingen/FT2.jpg);
+    background-size: cover;
+}
+    #slide-3 {
+    background-image: url(./afbeeldingen/FT3.jpeg);
+    background-size: cover;
+}
+    #slide-4 {
+    background-image: url(./afbeeldingen/FT1.jpg);
+    background-size: cover;
+}
+    #slide-5 {
+    background-image: url(./afbeeldingen/FT2.jpg);
+    background-size: cover;
+}
+
+#slide2-1 {
+    background-image: url(./afbeeldingen/FT2.jpg);
+    background-size: cover;
+}
+    #slide2-2 {
+    background-image: url(./afbeeldingen/FT3.jpeg);
+    background-size: cover;
+}
+    #slide2-3 {
+    background-image: url(./afbeeldingen/FT1.jpg);
+    background-size: cover;
+}
+    #slide2-4 {
+    background-image: url(./afbeeldingen/FT2.jpg);
+    background-size: cover;
+}
+    #slide2-5 {
+    background-image: url(./afbeeldingen/FT1.jpg);
+    background-size: cover;
+}
+
+h3 {
+    margin: 0;
+    font-family: Noteworthy;
+    text-align: left;
+    margin: 10px;
+    font-size: 14px;
+    color: fuchsia;
+  }
+p {
+    font-family: Lato;
+    font-size: 0.7em;
+}
+
+.imgInfo {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    display: inline-block;
+    width: 100%;
+    margin-top: 193px;
+    
+}
+.imgInfo:hover {
+    opacity: 0.2;
+}
+.nieuweInfo {
+    background-color: orange;
+    color: white;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    display: inline-block;
+    width: 100%;
+    margin-top: 193px;
+}
+.nieuweInfo:hover {
+    opacity: 0.4;
+}
+.roundImg {
+    height: 25px;
+    width: 25px;
+    border-radius: 15px; 
+    margin-right: 10px;
+    margin-bottom: -5px;
+    }
+
+#showAll {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    width: 96%;
+    border-radius: 0px;
+    padding: 10px;
+}
+#showAll:hover {
+    cursor: pointer;
+}
+
+.blok:hover {
+    cursor: pointer;
+}
+
+/* TOON MEER */
+
+#showMore {
+    margin-top: -80px;
+    margin-bottom: 70px;
+}
+
+/* TERUG KNOP */
+#return {
+    background-color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 96%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#return a {
+    color: black;
+}
+
+#returnArrow {
+    display: inline;
+    margin-bottom: -3px;
+    margin-left: -250px;
+    margin-right: 50px;
+    height: 15px;
+    width: 15px;
+    transform: rotate(180deg);
+}
+
+/* FORMULIER */
+
+legend {
+    text-align: center;
+}
+
+fieldset {
+    margin-left: 10px;
+    width: 88.7%;
+    border-radius: 5px;
+    text-align: left;
+    background-color: white;
+}
+
+#confirmation {
+    background-color: rgb(80, 209, 80);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 45px;
+    width: 80%;
+    font-size: 0.8em;
+}
+
+.calendar {
+    width: 30%;
+    border-radius: 5px;
+}
+
+#location {
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.location {
+    border-radius: 5px;
+    padding: 7px;
+    width: 44.7%;
+}
+#message{
+    padding-bottom: 50px;
+    border-radius: 5px;
+}
+
+/* MIJN GEGEVENS SCHEIDEN */
+
+.first {
+    display: inline;
+    width: 20%;
+}
+
+.secondMy {
+    display: inline;
+    width: 100px;
+    margin-left: 50%;
+}  
+    #secondMy2 {
+    display: inline;
+    margin-left: 48%;
+    }
+    #secondMy3 {
+    display: inline;
+    margin-left: 41.3%;
+    }
+    #secondMy4 {
+    display: inline;
+    margin-left: 49%;
+    }
+
+/* CONTACT GEGEVENS SCHEIDEN  */
+
+.secondContact {
+        display: inline;
+        margin-left: 46%;
+    }
+    #secondContact2 {
+        display: inline;
+        margin-left: 49.5%;
+    }
+    #secondContact3 {
+        display: inline;
+        margin-left: 46.5%;
+    }
+
+/* GROOT SCHERM */
+
+@media only screen and (min-width:65em) { 
+
+    input {
+        width: 90%;
+    }
+    .button-group {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    h2 {
+        margin-left: 50px;
+    }
+
+    .slider {
+        margin-left: 50px;
+        width: 1320px;
+      }
+}
